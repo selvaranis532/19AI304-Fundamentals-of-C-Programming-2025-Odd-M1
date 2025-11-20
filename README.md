@@ -26,7 +26,34 @@ To build a C program that prints integer, float,character, and string literals o
 ### Step 4: 
    Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    // Integer literal
+    int intLiteral = 100;
+
+    // Floating-point literal
+    float floatLiteral = 3.14f;
+
+    // Character literal
+    char charLiteral = 'A';
+
+    // String literal
+    char stringLiteral[] = "Hello, World!";
+
+    // Displaying the literals
+    printf("Integer Literal     : %d\n", intLiteral);
+    printf("Float Literal       : %.2f\n", floatLiteral);
+    printf("Character Literal   : %c\n", charLiteral);
+    printf("String Literal      : %s\n", stringLiteral);
+
+    return 0;
+}
+```
 # Output:
+<img width="397" height="167" alt="image" src="https://github.com/user-attachments/assets/0e7bcba9-2165-4827-9677-cc7c041e3f3b" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -57,7 +84,26 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 6:  
   Stop
 # Program:
+```
+#include <stdio.h>
+
+// Step 3: Define a macro constant
+#define PI 3.14159
+
+int main() {
+    // Step 4: Constant variable
+    const int DAYS = 7;
+
+    // Step 5: Display the values
+    printf("Value of PI (Macro Constant) = %.5f\n", PI);
+    printf("Value of DAYS (Constant Variable) = %d\n", DAYS);
+
+    return 0;
+}
+```
 # Output:
+<img width="453" height="316" alt="image" src="https://github.com/user-attachments/assets/ae2f59f5-dc84-412c-8f4a-82b63db3f09b" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -81,7 +127,28 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 5:    
    Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    // Step 3: Declare and initialize variables
+    int num = 10;
+    float fnum = 3.14f;
+    double dnum = 25.9876;
+    char ch = 'A';
+
+    // Step 4: Display the values
+    printf("Integer value   : %d\n", num);
+    printf("Float value     : %.2f\n", fnum);
+    printf("Double value    : %.4lf\n", dnum);
+    printf("Character value : %c\n", ch);
+
+    return 0;
+}
+```
 # Output:
+<img width="448" height="290" alt="image" src="https://github.com/user-attachments/assets/a3204577-1598-4de9-a5c5-2057bfcde9c1" />
+
 # Result: 
 
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd
@@ -120,7 +187,46 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    int a, b;
+
+    // Step 4: Input from user
+    printf("Enter two integers: ");
+    scanf("%d %d", &a, &b);
+
+    // Step 5: Arithmetic operations
+    printf("\n--- Arithmetic Operations ---\n");
+    printf("Sum (a + b)             = %d\n", a + b);
+    printf("Difference (a - b)      = %d\n", a - b);
+    printf("Product (a * b)         = %d\n", a * b);
+
+    if(b != 0) {
+        printf("Quotient (a / b)        = %d\n", a / b);
+        printf("Remainder (a %% b)       = %d\n", a % b);
+    } else {
+        printf("Division and remainder not possible (b = 0)\n");
+    }
+
+    // Step 6: Bitwise operations
+    printf("\n--- Bitwise Operations ---\n");
+    printf("AND (a & b)             = %d\n", a & b);
+    printf("OR (a | b)              = %d\n", a | b);
+    printf("XOR (a ^ b)             = %d\n", a ^ b);
+    printf("Left Shift (a << b)     = %d\n", a << b);
+    printf("Right Shift (a >> b)    = %d\n", a >> b);
+    printf("NOT of a (~a)           = %d\n", ~a);
+    printf("NOT of b (~b)           = %d\n", ~b);
+
+    return 0;
+}
+```
+
 # Output:
+<img width="511" height="544" alt="image" src="https://github.com/user-attachments/assets/6fbb0c70-07dc-4272-9fe1-b3b22686b83d" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -165,7 +271,32 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    char ch;
+
+    // Step 3: Input from user
+    printf("Enter a character: ");
+    scanf("%c", &ch);
+
+    // Step 4–7: Classification using ternary operator
+    (ch >= '0' && ch <= '9') ?
+        printf("Digit\n") :
+    ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) ?
+        ((ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||
+          ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U') ?
+            printf("Vowel\n") :
+            printf("Consonant\n")) :
+        printf("Special Symbol\n");
+
+    return 0;
+}
+```
 # Output:
+<img width="419" height="405" alt="image" src="https://github.com/user-attachments/assets/7241b5ed-b795-4bfd-ae77-442d57fa8b18" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
